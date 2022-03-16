@@ -1,0 +1,133 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background-image:linear-gradient(rgba(0,0,0,.8),rgb(0,0,0,.8)), url(img1.jpg);
+    min-height: 100vh;
+    text-rendering: optimizeLegibility;
+    background-size: cover;
+    background-position: center center;
+    color: white;
+}
+
+.row {
+    width: 1140px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.header {
+    text-align: center;
+    padding: 60px 0px;
+}
+
+.header h1 {
+    font-weight: 500;
+    font-size: 40px;
+}
+
+.header p {
+    padding-top: 10px;
+    padding-bottom: 30px;
+    font-style: italic;
+    font-size: 20px;
+}
+
+#survey-form {
+    width: 70%;
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 50px;
+    color: #f3f3f3;
+    font-size: 18px;
+}
+
+input[type=text], input[type=email], input[type=number],select[type=option], textarea {
+    width: 100%;
+    padding: 8px;
+    border-radius: 3px;
+    border: 1px solid #ccc;
+    background-color: #fff;
+    font-size: 18px;
+}
+
+input[type=checkbox], input[type=radio] {
+    transform: scale(1.5);
+}
+
+.stuffs {
+    padding: 15px 0px 25px 0px;
+}
+
+#submit {
+    width: 100%;
+    padding: 10px;
+    background-color: coral;
+    color: #fff;
+    font-size: 18px;
+    margin: 25px 0;
+    border: none;
+}
+
+.form-para {
+    font-size: 18px;
+    padding: 10px 0;
+    color: #f3f3f3;
+}
+
+#dropdown {
+    width: 100%;
+    padding: 8px;
+    border-radius: 3px;
+    border: 1px solid #ccc;
+    background-color: #fff;
+    font-size: 18px;
+}
+
+textarea {
+    height: 100px;
+
+}
+
+
+
+
+
+/* smaller to larger phones */
+@media only screen and (max-width:479px) {
+    body {
+        display: flex;
+        flex-direction: column;
+
+    }
+
+    input[type=text], input[type=email], input[type=number], select[type=option], textarea {
+        width: 100%;
+        padding: 8px;
+        border-radius: 3px;
+        border: 1px solid #ccc;
+        background-color: #fff;
+    }
+
+    #survey-form {
+        width: 100%;
+        background-color: rgba(0, 0, 0, 0.7);
+        border-radius: 10px;
+        padding: 15px;
+    }
+
+    .row {
+        width: 100%;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+
+    }
+    
+}
